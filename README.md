@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
       - name: "Unity Project Settings Info"
         id: unity-project-settings-info
-        uses: Breakstep-Studios/unity-project-settings-info@v1
+        uses: Breakstep-Studios/unity-project-settings-info@v1.0.0
       - name: "Output Bundle Version"
         run: |
           echo bundleVersion: ${{ steps.unity-project-settings-info.outputs.bundle-version }}
