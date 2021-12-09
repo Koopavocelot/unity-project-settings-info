@@ -1,4 +1,4 @@
-name: 'Unity Mobile Build Number Bumper'
+name: 'Unity Project Settings Info'
 author: Breakstep Studios
 description: 'Github action that retrieves ProjectSettings info for Unity project and outputs it via github actions output.'
 branding:
