@@ -8,6 +8,9 @@ outputs:
   bundle-version:
     description: "The bundleVersion of the unity project"
     value: ${{ steps.get-project-settings.outputs.bundle-version }}
+  bundle-code:
+    description: "The AndroidBundleCode of the unity project"
+    value: ${{ steps.get-project-settings.outputs.bundle-code }}
 runs:
   using: "composite"
   steps:
