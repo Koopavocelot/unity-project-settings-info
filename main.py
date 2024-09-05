@@ -1,4 +1,5 @@
 from unityparser import UnityDocument
+import os
 
 
 def run():
@@ -18,9 +19,9 @@ def run():
     print("bundle_version: " + str(bundle_version))
     print("bundle_code: " + str(bundle_code))
 
-    # see https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
-    print(f"::set-output name=bundle-version::{bundle_version}")
-    print(f"::set-output name=bundle-code::{bundle_code}")
+    with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+        print(f'bundle-version={bundle_version}', file=fh)
+        print(f'bundle-code={bundle_code}', file=fh)
 
     return
 
