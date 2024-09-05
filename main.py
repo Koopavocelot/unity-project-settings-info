@@ -14,7 +14,7 @@ def run():
 
     print("bundle_code: " + str(bundle_code))
 
-    print(f"::set-output name=bundle-code::{bundle_code}")
+    print(f"::set-output name=bundle-code::{str(bundle_code)}")
 
     return
 
