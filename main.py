@@ -6,7 +6,6 @@ def run():
     unity_document = UnityDocument.load_yaml(project_settings_file_path)
     projectsettings_monobehaviour_document = unity_document.entry
 
-    bundle_code = 0
     try:
         bundle_code = projectsettings_monobehaviour_document.AndroidBundleVersionCode
     except AttributeError:
