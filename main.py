@@ -21,6 +21,8 @@ def run():
 
     with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
         print(f'bundle-version={bundle_version}', file=fh)
+
+    with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
         print(f'bundle-code={bundle_code}', file=fh)
 
     return
