@@ -14,10 +14,10 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - name: "Setup Python v3.8"
+    - name: "Setup Python v3.12"
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.12.8
     - name: "Get Project Settings"
       id: get-project-settings
       shell: bash
